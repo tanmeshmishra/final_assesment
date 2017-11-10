@@ -48,13 +48,7 @@ export class ProductComponent implements OnInit {
 
   ngOnInit() {
   }
-  addToCart(name: String, price: Number, img: String, description: String) {
-    
-    this.service.onAddToCart( this.exitService.email,name, price, img, description).subscribe(res=>{alert("Added successfully")});
-
-   
-  }
-
+  
 
   
 

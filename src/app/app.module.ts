@@ -18,18 +18,21 @@ import { HttpModule } from '@angular/http';
 
 import { FacebookModule } from 'ngx-facebook';
 import { UserComponent } from './user/user.component';
+import { TvComponent } from './tv/tv.component';
+import { AdminComponent } from './admin/admin.component';
 
 
 const routes: Routes = [
   { path: 'Home', component: HomeComponent},
   { path: 'about', component: AboutComponent },
   { path: 'Login', component:LoginComponent },
- 
+  {path: 'Tv', component:TvComponent},
   { path: 'Signup', component:SignupComponent},
   { path: 'contact', component : ContactComponent},
   { path: 'logout', component: HomeComponent},
   { path: 'movies', component : ProductComponent},
   { path: 'details', component : DetailsComponent},
+  { path: 'admin', component: AdminComponent},
   { path: 'user', component:UserComponent },
   { path: '', component: HomeComponent},
   { path: '**', component: HomeComponent }
@@ -49,6 +52,8 @@ const routes: Routes = [
     ProductComponent,
     DetailsComponent,
     UserComponent,
+    TvComponent,
+    AdminComponent,
     
    
    

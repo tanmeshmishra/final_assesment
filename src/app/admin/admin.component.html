@@ -1,0 +1,123 @@
+<body style="background: black;">
+  <br>
+  <br>
+
+  <!-- Add Movies -->
+
+<div class="login-wrap">
+      <div class="login-html">
+<h2>Add Movie</h2>
+<form action="/action_page.php">
+
+<div class="form-group">
+  <label for="first name">Movie Name</label>
+  <input type="text" class="form-control" id="m_name" placeholder="Name" #mname name="Movie Name">
+</div> 
+
+ <div class="form-group">
+  <label for="last name">genres</label>
+  <input type="text" class="form-control" id="genres" placeholder="genres" #mgenres  name="genres">
+</div> 
+
+
+<div class="form-group">
+  <label for="email">URL:</label>
+  <input type="email" class="form-control" id="email" placeholder="Enter URL" #murl name="url">
+</div> 
+
+<div class="form-group">
+  <label for="pwd">Description</label>
+  <input type="text" class="form-control" id="pwd" placeholder="description" #description name="description">
+</div>
+
+<button type="submit" class="btn btn-success" (click)="insertMovie(mname.value,mgenres.value,murl.value,description.value)">Submit</button>
+<br>
+<br>
+</form>
+</div>
+</div>
+
+
+<br><br>
+
+<!-- Add Tv Series -->
+
+<div class="login-wrap">
+  <div class="login-html">
+<h2>Add Tv Series</h2>
+<form action="/action_page.php">
+
+<div class="form-group">
+<label for="first name">Tv Series Name</label>
+<input type="text" class="form-control" id="m_name" placeholder="Name" #name name="TV Name">
+</div> 
+
+<div class="form-group">
+<label for="last name">genres</label>
+<input type="text" class="form-control" id="genres" placeholder="genres" #genres name="genres">
+</div> 
+
+
+<div class="form-group">
+<label for="email">URL:</label>
+<input type="email" class="form-control" id="email" placeholder="Enter URL" #url name="url">
+</div> 
+
+<div class="form-group">
+<label for="pwd">Description</label>
+<input type="text" class="form-control" id="pwd" placeholder="description" #Description name="description">
+</div>
+
+<button type="submit" class="btn btn-success" (click)="insertTv(name.value,genres.value,url.value,description.value)">Submit</button>
+<br>
+<br>
+</form>
+</div>
+</div>
+<br><br>
+
+<!-- Delete Movie -->
+
+<div class="login-wrap">
+  <div class="login-html">
+<h2>Delete Movie</h2>
+<form action="/action_page.php">
+
+<div class="form-group">
+<label for="first name">Movie Name</label>
+<input type="text" class="form-control" id="m_name" #name placeholder="Name" name="Movie Name">
+</div> 
+
+<button type="button" class="btn btn-success" (click)="deleteMovie(name.value)">Submit</button>
+
+<br>
+<br>
+</form>
+</div>
+</div>
+<br><br>
+
+<!-- Delete Tv series -->
+<div class="login-wrap">
+<div class="login-html">
+<h2>Delete Tv Series</h2>
+<form action="/action_page.php">
+<br>
+<br>
+<div class="form-group">
+
+<label for="first name">Tv Series Name</label>
+<input type="text" class="form-control" id="m_name" #name placeholder="Name" name="Movie Name">
+</div> 
+
+
+<button type="submit" class="btn btn-success" (click)="deleteTv(name.value)">Submit</button>
+<br>
+<br>
+</form>
+</div>
+</div>
+
+<!-- Update Movie -->
+
+</body>

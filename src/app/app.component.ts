@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { ExitService } from './exit.service';
+import { AuthenticationService } from './authentication.service';
 
 @Component({
   selector: 'app-root',
@@ -8,7 +9,7 @@ import { ExitService } from './exit.service';
 })
 export class AppComponent {
   title = 'app';
-  constructor(private service: ExitService) {}
+  constructor(private service: ExitService, private loginService: AuthenticationService) {}
   doThis() {
     this.service.exit=true;
   }

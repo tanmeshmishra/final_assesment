@@ -17,16 +17,22 @@
           </ng-template>
             <ng-template [ngIf]="!service.exit">    
               
-                <a [routerLink]="['/about']"><span class="glyphicon glyphicon-info-sign"> Movies</span></a>
-                       <a [routerLink]="['/about']"><span class="glyphicon glyphicon-info-sign"> TV Series</span></a>
+                <a [routerLink]="['/movies']"><span class="glyphicon glyphicon-tv"> Movies</span></a>
+                       <a [routerLink]="['/Tv']"><span class="glyphicon glyphicon-tv"> TV Series</span></a>
               
               <a [routerLink]="['/Home']" (click)="doThis()" >
                  <button type="button"> <span class="glyphicon glyphicon-log-out"> Logout </span></button></a>
-               
+               <a [routerLink]="['/admin']" class="pull-right" >
+                  <button type="button" class="btn btn-success"> <span class="glyphicon glyphicon-edit">
+                    </span> Edit </button> </a>
                  <a [routerLink]="['/user']" class="pull-right" >
                     <button type="button" class="btn btn-success"> <span class="	glyphicon glyphicon-arrow-left">
                       </span> Back</button> </a>
                 </ng-template>
+                <ng-template [ngIf]="service.role">
+                <a [routerLink]="['/admin']" class="pull-right" >
+                  <button type="button" class="btn btn-success"> <span class="glyphicon glyphicon-edit">
+                    </span> Edit </button> </a> </ng-template>
      </div>
   
      <div id="body">

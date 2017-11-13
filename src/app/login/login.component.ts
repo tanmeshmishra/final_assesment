@@ -35,9 +35,10 @@ login(email: string, password: string) {
       this.service.email=this.user.email;
       this.router.navigate(['/user']);
       //this.service.email = this.user.email;
-        //return this.service.email;
+      this.loginService.role = this.user.role;
       this.service.exit = false;
-      return this.service.exit;
+      console.log(this.loginService.role);
+            return this.service.exit;
     } else {
       console.log('Error occurred');
       alert('Error occurred');
